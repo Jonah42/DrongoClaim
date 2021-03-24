@@ -1,4 +1,4 @@
 requests
 requests_html
 selenium
-kivy
+pickle
