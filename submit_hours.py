@@ -24,7 +24,7 @@ def submit(data):
 	browser.get('https://forms.office.com/Pages/ResponsePage.aspx?id=pM_2PxXn20i44Qhnufn7o8ltiXjgwdBMqx5Dt3_E2eBUODMwMzdDV0NTUlgzUkdHS0w5UkdEMVU5My4u')
 	for course in reversed(data['courses']):
 		while (len(browser.find_elements_by_css_selector('input')) != 3):
-			if (len(browser.find_elements_by_css_selector('input')) > 3):
+			if (len(browser.find_elements_by_css_selector('input')) != 31):
 				try:
 					backButton = browser.find_element_by_xpath("//button[@aria-label='Back']")
 					backButton.click()
