@@ -1,4 +1,7 @@
 # DrongoClaim
+
+v1.1
+
 A tool to make UNSW elec payclaims simpler
 
 ## What am I?
@@ -61,3 +64,7 @@ At this point the best way to work out what is going wrong is to email me with t
 Let me know if you have any suggestions or feedback! (And of course if you find a bug) :-)
 
 `jmeggs@outlook.com.au`
+
+## Changelog
+
+v1.1: Added feedback to buttons, implemented better data checking and submission history management, and added better error handling so it shouldn't crash to the terminal
