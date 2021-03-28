@@ -183,14 +183,15 @@
                     # pos_hint: {'center_y': 0.5}
                     text: 'Submit'
                     font_size: 30
+                    on_release: app.root.submitClaims(subjectList)
+                    on_kv_post: self.load_colours(self.submit_normal, self.submit_pressed)
                     canvas.before:
                         Color:
-                            rgb: 0x3c / 255.0, 0xb0 / 255.0, 0x4c / 255.0
+                            rgb: self.button_color
                         RoundedRectangle:
                             size: self.size
                             pos: self.pos
                             radius: [10]
-                    on_release: app.root.submitClaims(subjectList)
 
 <SubjectList>:
 
@@ -199,12 +200,19 @@
     color: rgba('#000000')
 
 <DrongoButton>:
+    # id: drongo_button
+    # my_color: 0x38 / 255.0, 0xb6 / 255.0, 0xff / 255.0
     font_name: 'open-sans'
+    background_normal: ''
+    background_down: ''
     background_color: [0,0,0,0]
+    # my_background: [0x38/255,0xb6/255,0xff/255,1]
     color: rgba('#000000')
+    on_press: self.button_color = self.pressed
+    on_release: self.button_color = self.normal
     canvas.before:
         Color:
-            rgb: 0x38 / 255.0, 0xb6 / 255.0, 0xff / 255.0
+            rgb: self.button_color
         RoundedRectangle:
             size: self.size
             pos: self.pos
