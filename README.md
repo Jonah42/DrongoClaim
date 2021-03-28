@@ -57,6 +57,8 @@ If you are submitting a one-off payclaim it is suggested you don't save it, rath
 
 ## Troubleshooting
 
+Please note this has not been tested on Mac - it should work though. If you use DrongoClaim on a Mac please let me know how it goes!
+
 At this point the best way to work out what is going wrong is to email me with the error message from the terminal/DrongoClaim and any relevant screenshots/context. Most errors should be appropriately handled
 
 ## Contact
