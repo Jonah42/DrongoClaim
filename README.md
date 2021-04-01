@@ -14,9 +14,41 @@ Currently DrongoClaim does some checking of what you are submitting. It will ens
 
 ## Installation
 
+If you have issues installing it is recommended that you use a virtual environment so you can avoid issues with package versions. See below on how to do this.
+
 ### Python
 
-Python 3 is required, I recommend installing 3.7.9 but any recent version should work. You can check the version by running `python --version` in a terminal. If this returns Python 2, try `python3 --version` (if this is the case you'll need to use `python3` and `pip3` for all the following commands)
+Python 3 is required, I recommend installing 3.7.9 but any recent version should work. You can check the version by running `python --version` in a terminal. If this returns Python 2, try `python3 --version`
+
+### Python Virtual Environment (optional)
+
+A virtual environment serves to give you another python environment which is completely isolated from your global installation. To make a virtual environment, create a new directory as follows (note you'll need to use python v3 for this, so you may need to use `python3` instead):
+
+`python -m venv drongo`
+
+This creates the directory `drongo` with some folders used to maintain the virtual environment. Navigate into the directory:
+
+`cd drongo`
+
+Now we need to start the virtual environment. In Windows:
+
+`Scripts\activate`
+
+On Mac/Linux:
+
+`source bin/activate`
+
+You should now see `(drongo)` appear to the left of your terminal. Now you should be able to just use `python` (as the venv only knows about python 3).
+
+If you want you can deactivate the virtual environment (although this is probs only useful if you want to use the same terminal to access your global python installation, after using DrongoClaim (I personally cannot think of a reason why you'd do this though - just make a new terminal)):
+
+`deactivate`
+
+You'll need to activate the venv each time you start a terminal. (Maybe writing a shell script/batch file would help but ceebs)
+
+### Clone/Download this repo
+
+Pretty self explanatory, chuck it wherever you'd like (just remember you'll need to activate the virtual environment so maybe put it somewhere near that)
 
 ### Python Libraries
 
@@ -59,7 +91,7 @@ If you are submitting a one-off payclaim it is suggested you don't save it, rath
 
 Please note this has not been tested on Mac - it should work though. If you use DrongoClaim on a Mac please let me know how it goes!
 
-At this point the best way to work out what is going wrong is to email me with the error message from the terminal/DrongoClaim and any relevant screenshots/context. Most errors should be appropriately handled
+At this point the best way to work out what is going wrong is to email me with the error message from the terminal/DrongoClaim and any relevant screenshots/context. Most errors should be appropriately handled by DrongoClaim.
 
 ## Contact
 
@@ -69,4 +101,10 @@ Let me know if you have any suggestions or feedback! (And of course if you find 
 
 ## Changelog
 
+v1.2: Added Inma for 1111 peeps :-). Also venv explanation.
 v1.1: Added feedback to buttons, implemented better data checking and submission history management, and added better error handling so it shouldn't crash to the terminal
+
+## TODO
+
+ - Better size management on mac
+ - Access readable history
