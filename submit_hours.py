@@ -27,7 +27,7 @@ def submit(data):
     options = webdriver.ChromeOptions()
     if not os.path.exists('User/'):
         os.makedirs('User/')
-    options.add_argument('user-data-dir=./User')
+    options.add_argument('user-data-dir='+os.getcwd()+'/User')
     browser = None
     if sys.platform.startswith('win32'):
         browser = webdriver.Chrome('./driver/win32/chromedriver', options=options)

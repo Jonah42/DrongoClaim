@@ -22,7 +22,7 @@ Python 3 is required, I recommend installing 3.7.9 but any recent version should
 
 ### Python Virtual Environment (optional)
 
-A virtual environment serves to give you another python environment which is completely isolated from your global installation. To make a virtual environment, create a new directory as follows (note you'll need to use python v3 for this, so you may need to use `python3` instead):
+A virtual environment serves to give you another python environment which is completely isolated from your global installation. It affects your terminal, not a folder. To make a virtual environment, create a new directory as follows (note you'll need to use python v3 for this, so you may need to use `python3` instead):
 
 `python -m venv drongo`
 
